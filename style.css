@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url('./fonts/Ubuntu-Light.woff');
+    font-style: 300;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url('./fonts/Ubuntu-Medium.woff');
+    font-style: 400;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url('./fonts/Ubuntu-Regular.woff');
+    font-style: 500;
+    font-weight: normal;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://w0.peakpx.com/wallpaper/989/507/HD-wallpaper-magical-colors-mystery-beautiful-magic-clouds-fantasy-splendor-color-animals-amazing-fairyland-colors-warrior-mountains-awesome-great-castle-landscape.jpg');
+    background-size: cover;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.menu, .menu1{
+    display: block;
+    height: 65%;
+    width: 50%;
+    border: 4px solid black;
+}
+.menu1{
+    background-image: linear-gradient(135deg, #ff6a00, #833ab4, #00bcd4);
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 200% 200%;
+}
+.play, .exit{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12vw;
+    height: 12vh;
+    border-radius: 15%;
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    cursor: url('./imgs/Cursor.png'), auto;
+    transition: 3s;
+    animation: link 3s linear infinite alternate;
+}
+.link, .link9, .link1{
+    display: flex;
+    height: calc(70% - 120px);
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.link9, .link1{  
+    height: 30%;  
+}
+.theme{
+    display: block;
+    height: 30%;
+    width: 100%;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 35px;
+}
+.theme1, .theme4 , .theme6, .theme7, .theme8, .theme9{
+    display: block;
+    padding-top: 15px;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+.theme9, .theme8{
+    color: red;
+}
+.play:hover, .exit:hover, .no:hover, .yes9:hover, .yes:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9{
+    display: block;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8{
+    display: flex;
+    width: 50%;
+    height: calc(40% - 15px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+.image1{
+    background-image: url('./imgs/1.avif');
+}
+.image2{
+    background-image: url('./imgs/2.avif');
+}
+.image3{
+    background-image: url('./imgs/3.avif');
+    background-position: 0px -140px;
+}
+.image4{
+    background-image: url('./imgs/4.png');
+    background-position: 0px -80px;
+}
+.image5{
+    background-image: url('./imgs/5.webp');
+    background-position: 0px -90px;
+}
+.image6{
+    background-image: url('./imgs/6.jpg');
+}
+.image7{
+    background-image: url('./imgs/7.avif');
+}
+.image8{
+    background-image: url('./imgs/8.avif');
+}
+.yes, .no, .yes9{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12vw;
+    height: 12vh;
+    border-radius: 15%;
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    cursor: url('./imgs/Cursor.png'), auto;
+    transition: 3s;
+    animation: link 3s linear infinite alternate;
+}
+.yes9{
+    font-size: 1.5vw;
+}
+@keyframes link{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    } 
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes gradientAnimation {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
